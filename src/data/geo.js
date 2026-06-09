@@ -14,7 +14,7 @@ const coordonnees = {
   "Grenoble": { lat: 45.1885, lon: 5.7245 },
 };
 
-// Formule Haversine exacte (depuis le 2e projet)
+// Formule Haversine exacte (depuis le 2e projet) pas sur
 export function distanceKm(lat1, lon1, lat2, lon2) {
   const R = 6371;
   const dLat = (lat2 - lat1) * Math.PI / 180;
@@ -44,5 +44,7 @@ export function villeLaPlusProche(lat, lon) {
   }
   return proche;
 }
+
+// test test 
 
 export default coordonnees;
