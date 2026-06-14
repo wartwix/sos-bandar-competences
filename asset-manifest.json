@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sos-bandar-competences/static/css/main.92e54f91.css",
+    "main.js": "/sos-bandar-competences/static/js/main.bddb9631.js",
+    "static/media/bandarmuscle.jpg": "/sos-bandar-competences/static/media/bandarmuscle.f8e21498a57f67719e59.jpg",
+    "static/media/fenetre.jpg": "/sos-bandar-competences/static/media/fenetre.87de58b41cde579932f4.jpg",
+    "static/media/boir.jpg": "/sos-bandar-competences/static/media/boir.763e690b49fef975aebf.jpg",
+    "static/media/sourir.jpg": "/sos-bandar-competences/static/media/sourir.d5b08c719e2d08e331a7.jpg",
+    "static/media/bandar.jpg": "/sos-bandar-competences/static/media/bandar.e33fc7abeee4b4240e0c.jpg",
+    "static/media/ruy.jpg": "/sos-bandar-competences/static/media/ruy.376f6e6204cdb2198150.jpg",
+    "static/media/tkt.jpg": "/sos-bandar-competences/static/media/tkt.de2765be59b0f6977c5f.jpg",
+    "index.html": "/sos-bandar-competences/index.html",
+    "main.92e54f91.css.map": "/sos-bandar-competences/static/css/main.92e54f91.css.map",
+    "main.bddb9631.js.map": "/sos-bandar-competences/static/js/main.bddb9631.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92e54f91.css",
+    "static/js/main.bddb9631.js"
+  ]
+}
