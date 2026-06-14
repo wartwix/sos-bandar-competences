@@ -1,58 +1,111 @@
-# SOS Bandar Competences
+# 🤝 SOS Bandar — Skills Matching Platform
 
-Application web interactive de mise en relation par competences (cours, sport, renovation, cuisine...),
-inspiree des applications de rencontre : profils avec photos et etiquettes de competences,
-decouverte des profils autour de soi selon un rayon en km, notation par etoiles et commentaires.
+A React web application that connects people through their skills — find someone nearby to help you with tutoring, DIY, sports coaching, and more.
 
-## Technologies
-- **React** (composants, logique, interactivite)
-- **React Router** (navigation entre pages)
-- **Bootstrap 5** (mise en page, navbar, grille, composants)
-- **CSS** personnalise (theme, cartes style Tinder, responsive)
-- **localStorage** pour la persistance des profils, notes et commentaires
+## 🌐 Live Demo
 
-## Structure
-```
-sos-bandar-competences/
-├── public/
-│   └── index.html
-└── src/
-    ├── index.js          # point d'entree React
-    ├── App.js            # structure globale + routes
-    ├── components/       # Navbar, CarteProfil, Etoiles
-    ├── pages/            # Accueil, CreerProfil, DetailProfil, APropos
-    ├── styles/           # style.css
-    └── data/             # profils.json, villes.js, geo.js, AppContext.js
-```
+👉 **[https://wartwix.github.io/sos-bandar-competences/](https://wartwix.github.io/sos-bandar-competences/)**
 
-## Fonctionnalites
-- Creation de profil avec plusieurs photos, age, ville, bio et etiquettes de competences
-- Decouverte des profils sous forme de cartes "swipe" (style Tinder, sans match mutuel)
-- Localisation simulee via la geolocalisation du navigateur -> grande ville la plus proche
-  (avec selection manuelle de ville en repli si la geoloc est refusee)
-- Filtrage des profils par rayon (km) et par competence
-- Systeme de notes en etoiles + commentaires sur chaque profil
-- Persistance des donnees dans le navigateur (localStorage)
+No download required — open the link and use it directly in your browser.
 
-## Installation et lancement
+## 📋 Description
+
+Users can:
+
+- Browse profiles and filter by skill, availability, price, rating, and distance
+- View a profile in detail with photos, reviews, and badges
+- See helpers on an interactive map (geolocation)
+- Send help requests and manage favorites
+- Access an emergency assistance section
+- Toggle between light and dark mode
+
+> All data is managed client-side — no database or backend required.
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/) — components, state, routing
+- [React Router](https://reactrouter.com/) — client-side navigation
+- [React Leaflet](https://react-leaflet.js.org/) — interactive map
+- [Bootstrap 5](https://getbootstrap.com/) — responsive layout and UI components
+- [Create React App](https://create-react-app.dev/) — build tooling
+
+## 🚀 Run Locally
+
 ```bash
+git clone https://github.com/wartwix/sos-bandar-competences.git
+cd sos-bandar-competences
 npm install
 npm start
 ```
-L'application demarre sur http://localhost:3000
 
-## Build de production
-```bash
-npm run build
+App will be available at `http://localhost:3000`.
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/         # Profile images
+├── components/     # Reusable components (Navbar, CarteProfil, Badges, ...)
+├── data/           # Mock data (profils, villes, geo, AppContext)
+├── pages/          # Main pages (Accueil, Carte, Favoris, Urgences, ...)
+├── styles/         # Global CSS
+├── App.js
+└── index.js
 ```
 
-## Versionnage (consigne)
-Initialiser un depot Git, le pousser sur GitHub et ajouter le professeur (`helaRaj`) comme collaborateur :
+---
+
+# 🤝 SOS Bandar — Plateforme de mise en relation par compétences
+
+Application web React qui connecte des personnes grâce à leurs compétences — trouvez quelqu'un près de chez vous pour du soutien scolaire, du bricolage, du coaching sportif, et plus encore.
+
+## 🌐 Démo en ligne
+
+👉 **[https://wartwix.github.io/sos-bandar-competences/](https://wartwix.github.io/sos-bandar-competences/)**
+
+Aucun téléchargement nécessaire — ouvrez le lien et utilisez l'application directement dans votre navigateur.
+
+## 📋 Description
+
+Les utilisateurs peuvent :
+
+- Parcourir des profils et filtrer par compétence, disponibilité, tarif, note et distance
+- Consulter le détail d'un profil avec photos, avis et badges
+- Voir les helpers sur une carte interactive (géolocalisation)
+- Envoyer des demandes d'aide et gérer ses favoris
+- Accéder à une section d'urgences
+- Basculer entre le mode clair et sombre
+
+> Les données sont gérées entièrement côté front-end — pas de base de données ni de back-end.
+
+## 🛠️ Technologies
+
+- [React](https://react.dev/) — composants, state, routing
+- [React Router](https://reactrouter.com/) — navigation entre les pages
+- [React Leaflet](https://react-leaflet.js.org/) — carte interactive
+- [Bootstrap 5](https://getbootstrap.com/) — mise en page responsive et composants UI
+- [Create React App](https://create-react-app.dev/) — outils de build
+
+## 🚀 Lancer en local
+
 ```bash
-git init
-git add .
-git commit -m "Initial commit - SOS Bandar Competences"
-git branch -M main
-git remote add origin <url-du-depot>
-git push -u origin main
+git clone https://github.com/wartwix/sos-bandar-competences.git
+cd sos-bandar-competences
+npm install
+npm start
+```
+
+L'application sera accessible sur `http://localhost:3000`.
+
+## 📁 Structure du projet
+
+```
+src/
+├── assets/         # Images des profils
+├── components/     # Composants réutilisables (Navbar, CarteProfil, Badges, ...)
+├── data/           # Données mockées (profils, villes, geo, AppContext)
+├── pages/          # Pages principales (Accueil, Carte, Favoris, Urgences, ...)
+├── styles/         # CSS global
+├── App.js
+└── index.js
 ```
